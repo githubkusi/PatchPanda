@@ -821,7 +821,7 @@ public class UpdateService
                             targetApp.PostUpdateHook,
                             stack.ConfigFile,
                             targetApp.Name,
-                            oldVersion ?? string.Empty,
+                            oldVersion,
                             newVersion
                         );
 
