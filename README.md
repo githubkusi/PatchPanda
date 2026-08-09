@@ -223,6 +223,7 @@ services:
         ...
 ```
 
+Restart the observed stack with docker compose such that the labels are being read and recheck the containers in the PatchPanda GUI
 PatchPanda sets these variables for your script:
 
 - `PP_PROJECT_DIR`: Directory of the compose file
@@ -246,7 +247,7 @@ git config --global --add safe.directory "$PP_PROJECT_DIR"
 git config --global user.email "none@none"
 git config --global user.name "PatchPanda Updater"
 git add docker-compose.yml
-git commit -m "Update $PP_OLD_VERSION -> $PP_NEW_VERSION"
+git commit -m "PatchPanda update $PP_OLD_VERSION -> $PP_NEW_VERSION"
 ```
 
 ## Troubleshooting & tips
